@@ -4,7 +4,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'static_pages#top'
-
+   
+   resources :users
+   #get '/users' =>'users#index',as: :users
+   #get '/users/new' => 'users#new'
+   #get '/users/:id' =>'users#show'
+   #post '/users' => 'users#create'
+   
+   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
